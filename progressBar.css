@@ -1,0 +1,57 @@
+body {
+    background-color: #000;
+    color:#707070;
+}
+.progressBarre {
+    width:250px;
+    height: 30px;
+    background-color: #707070;
+    border-radius: 4px;
+}
+progress[value]::-webkit-progress-bar{
+    border-radius: 4px;
+    background-color: yellowgreen;
+}
+#Progress_Status, .Progress_html {  /*Ce code CSS va permettre de configurer la barre de progression*/
+    width: 250px; 
+    background-color: #ddd; 
+    border-radius: 10px;
+  } 
+    
+  #myprogressBar, .html_bar { /*Ce code correspond à la barre de valeur*/
+    width: 1%; 
+    height: 35px; 
+    background-color: #4CAF50; 
+    text-align: center; 
+    line-height: 32px; 
+    color: black; 
+    border-radius: 10px;
+  } 
+ .html_bar:hover{  /*J'utilise l'événement hover pour que l'enclenchement se fasse au moment où la souris passe dessus*/
+            width:1%;
+            animation: progress_keyframe 5s reverse;  /*J'utilise la propriété animation en incluant la durée de l'animation et inverser le sens */
+         }
+  .baba:hover{
+      color:pink;
+  }
+
+  @keyframes progress_keyframe {  /*J'utilise la règle keyframes pour séquencer l'animation*/
+      0%{
+          width:0%;
+      }
+      10%{
+          background-color: #857800;
+      }
+      25%{
+          background-color:pink;
+      }
+      50%{
+          background-color: turquoise;
+      }
+      75%{
+          background-color: gray;
+      }
+      100%{
+          width:100%
+      }
+  }
