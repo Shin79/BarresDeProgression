@@ -1,3 +1,4 @@
-#Mini-projet
-##Barre de progression
+# Mini-projet
+
+## Barres de progression
   
