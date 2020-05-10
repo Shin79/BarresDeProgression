@@ -1,2 +1,3 @@
-# BarresDeProgression
-mini_projet
+#Mini-projet
+##Barre de progression
+  
