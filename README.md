@@ -1,2 +1,0 @@
-# BarresDeProgression
-mini_projet
