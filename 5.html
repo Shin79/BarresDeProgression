@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="barre de progression"/>
+        <title>Barres de progression</title>
+        <link rel="stylesheet" href="progressBar.css"/>
+    </head>
+    <body>
+        <p>Barre de progression HTML/CSS/JS</p>
+        <div id="Progress_Status" onclick="update()"> 
+            <div id="myprogressBar"><strong>0%</strong></div> 
+          </div>
+          <script>
+              
+              function update() { 
+                let element = document.getElementById("myprogressBar"); // On accède à l'élément dont l'ID est "myprogressBar"
+                let colors = ["white","#387877","#977744","blue","red","blue","yellow","#707070","green","brown"];
+                
+                for(w=0;w<100;w*2){
+                    (function(){
+                        var width = w;
+                    setTimeout(function(){
+                    element.style.width = width + "%";
+                    element.style.backgroundColor = colors[width];
+                    element.innerHTML = `Chargé à ${width} %`;
+                    },500*w);
+                })();
+            }}
+          </script> 
+    </body>
+</HTML>
