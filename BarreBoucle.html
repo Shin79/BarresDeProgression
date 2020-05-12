@@ -20,9 +20,10 @@
                 for(w=0;w<100;w++){
                     (function(){
                         var width = w;
+                        let rd_color = (Math.floor(Math.random() * colors.length))
                     setTimeout(function(){
                     element.style.width = width + "%";
-                    element.style.backgroundColor = colors[width];
+                    element.style.backgroundColor = colors[rd_color];
                     element.innerHTML = `Chargé à ${width} %`;
                     },500*w);
                 })();
